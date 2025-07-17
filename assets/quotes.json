@@ -1,15 +1,72 @@
 [
     {
       "quote": "To be, or not to be: that is the question.",
+      "Japanese":"生きるべきか死すべきか、それが問題だ",
       "source": "Hamlet"
     },
     {
       "quote": "All the world’s a stage, and all the men and women merely players.",
+      "Japanese":"この世は舞台、人はみな役者",
       "source": "As You Like It"
     },
     {
       "quote": "The course of true love never did run smooth.",
+      "Japanese":"真実の愛の道は決して平坦ではない",
       "source": "A Midsummer Night's Dream"
+    },
+
+    {
+      "quote":"There are more things in heaven and earth,Horatio Than are dreamt of in your philosophy. ",
+      "Japanese":"ホレイショー、天と地の間にはお前の哲学などには思いもよらぬ出来事があるのだ",
+      "source" :"Hamlet"
+    },
+
+    {
+      "quote":"Sweet are the uses of adversity",
+      "Japanese":"逆境が人に与える教訓ほどうるわしいものはない",
+      "source":"As You Like It"
+    },
+
+    {
+      "quote":"Tomorrow, and tomorrow, and tomorrow.Creeps in this petty pace from day to day",
+      "Japanese":"明日、明日、また明日と、けちな歩みで日々が過ぎ、定められたとき、最後の一節にたどり着くのだ",
+      "source":"Macbeth"
+    },
+
+    {
+      "quote":"The night is long that never finds the day",
+      "Japanese":"どんなに長くとも夜は必ず明ける",
+      "source":"Macbeth"
+    },
+
+    {
+      "quote":"And you all know, security/Is mortals’ chiefest enemy. ",
+      "Japanese":"そうさ、生き身の人間、うぬぼれこそが、何より大敵なのよ",
+      "source":"Macbeth"
+    },
+    
+    {
+      "quote":"To mourn a mischief that is past and gone is the next way to draw new mischief on. ",
+      "Japanese":"過ぎた不幸を嘆くは、新しき不幸を招く近道なり",
+      "source":"Othello"
+    },
+
+    {
+      "quote":"Even the unavoidable misfortune can be laughed at in due course if you put up with it.",
+      "Japanese":"避けがたき不幸も、これを忍べば、やがてこれを笑うことができる",
+      "source":"Othello"
+    },
+
+    {
+      "quote":"When we are born, we cry that we are come to this great stage of fools.",
+      "Japanese":"人は泣きながら生まれる。このあほうどもの舞台に引き出されたのが悲しくてな",
+      "source":"King Lear"
+    },
+
+    {
+      "quote":"The worst is not, So long as we can say, ‘This is the worst.",
+      "Japanese":"「今が最悪の状態」と言える間は、 まだ最悪の状態ではない",
+      "source":"King Lear"
     }
     
   ]

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
+import 'dart:math' as math;
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<void> loadJson() async {
-    final directory = await rootBundle.loadString('assets/quotes.json');
+    String directory = await rootBundle.loadString('assets/quotes.json');
     setState(() {
       jsonStr = directory;
     });
@@ -52,6 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var random = math.Random().nextInt(12);
+
     if (jsonStr == null) {
       return const Center(child: CircularProgressIndicator());
     }
@@ -65,10 +68,9 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text('${json_data[0]['quote']}'),
+            Text('${json_data[random]['quote']}'),
+            Text('${json_data[random]['Japanese']}'),
+            Text('${json_data[random]['source']}'),
           ],
         ),
       ),
