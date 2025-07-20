@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    var random = math.Random().nextInt(12);
+    var random = math.Random().nextInt(11);
 
     if (jsonStr == null) {
       return const Center(child: CircularProgressIndicator());
@@ -71,18 +71,19 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
-                '${json_data[random]['quote']}',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
+              ListTile(
+                title: Text(
+                  '${json_data[random]['quote']}',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              Text(
-                '${json_data[random]['Japanese']}',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                subtitle: Text(
+                  '${json_data[random]['Japanese']}',
+                  style: TextStyle(
+                    fontSize: 18,
+                  ),
                 ),
               ),
               Text(
@@ -96,6 +97,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.refresh),
+          onPressed: () {
+            setState(() {});
+          }),
     );
   }
 }
